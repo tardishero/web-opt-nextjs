@@ -23,7 +23,7 @@ const DesignCard: React.FC<DesignCardProps> = ({ design }) => {
         </div>
 
         <div className="w-full mt-5">
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center px-5">
             <h3 className="text-lg font-bold">{design.label}</h3>
             <div className="space-x-2">
               <Image

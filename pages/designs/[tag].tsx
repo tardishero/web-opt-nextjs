@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps<DesignDetailPageProps> = async (
 
 const DesignDetailPage: React.FC<DesignDetailPageProps> = ({ design }) => {
   return (
-    <Layout currentPage="DesignDetails">
+    <Layout currentPage="Designs">
       <IntroSection>Design Detail</IntroSection>
       <div className="w-full relative rounded-xl border-fun-gray border p-2 transition hover:border-fun-pink">
         <Image
@@ -50,7 +50,7 @@ const DesignDetailPage: React.FC<DesignDetailPageProps> = ({ design }) => {
         />
       </div>
       <div className="w-full my-10">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center px-5">
           <h3 className="text-lg font-bold">{design.label}</h3>
           <div className="space-x-2">
             <a href={design.link} target="_blank" rel="noreferrer">
