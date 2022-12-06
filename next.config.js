@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['cdn.dribbble.com'],
-  }
+  },
 };
 
 module.exports = nextConfig;
