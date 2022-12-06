@@ -1,6 +1,6 @@
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';
-import { apiHost } from '../../config';
 
+import { apiHost } from '../../config';
 import { DesignCollection, SingleDesign } from '../../types';
 
 export const getFetchAllServerSideProps: GetServerSideProps<
@@ -20,9 +20,9 @@ export const getFetchAllServerSideProps: GetServerSideProps<
 export const getFetchItemServerSideProps: GetServerSideProps<
   SingleDesign
 > = async (context: GetServerSidePropsContext) => {
-  const data = await fetch(
-    `${apiHost()}/designs/${context.params?.tag}`
-  ).then((res) => res.json());
+  const data = await fetch(`${apiHost()}/designs/${context.params?.tag}`).then(
+    (res) => res.json()
+  );
 
   return {
     props: {
