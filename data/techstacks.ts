@@ -1,8 +1,4 @@
-interface TechStack {
-  title: string;
-  icon: string;
-  style?: object;
-}
+import { TechStack } from '../types';
 
 const techstacks: TechStack[] = [
   {

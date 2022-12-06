@@ -1,21 +1,4 @@
-interface Route {
-  title: string;
-  path: string;
-}
-
-interface FooterColumn {
-  title: string;
-  links: {
-    name: string;
-    link: string;
-    icon?: string;
-    leavesWebsite: boolean;
-  }[];
-}
-
-interface Footer {
-  columns: FooterColumn[];
-}
+import { Footer, Route } from '../types';
 
 export const routes: Route[] = [
   {

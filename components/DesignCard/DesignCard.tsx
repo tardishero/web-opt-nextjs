@@ -1,13 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Design } from '../../data/designs';
+import { SingleDesign } from '../../types';
 
-interface DesignCardProps {
-  design: Design;
-}
-
-const DesignCard: React.FC<DesignCardProps> = ({ design }) => {
+const DesignCard: React.FC<SingleDesign> = ({ design }) => {
   return (
     <div className="w-full mx-auto flex flex-col md:justify-center">
       <Link href={`/designs/${design.key}`}>
