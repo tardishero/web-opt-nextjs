@@ -33,7 +33,7 @@ export const footer: Footer = {
       links: [
         {
           name: 'GitHub',
-          link: 'https://github.com/deep-quality-dev',
+          link: 'https://github.com/deep-quality-dev/nextjs-web-opt',
           icon: '/static/icons/github-f.svg',
           leavesWebsite: true,
         },

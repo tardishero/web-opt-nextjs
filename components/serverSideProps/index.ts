@@ -1,11 +1,12 @@
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';
+import { apiHost } from '../../config';
 
 import { DesignCollection, SingleDesign } from '../../types';
 
 export const getFetchAllServerSideProps: GetServerSideProps<
   DesignCollection
 > = async (_: GetServerSidePropsContext) => {
-  const data = await fetch(`https://apimocha.com/designs/list`).then((res) =>
+  const data = await fetch(`${apiHost()}/designs/list`).then((res) =>
     res.json()
   );
 
@@ -20,7 +21,7 @@ export const getFetchItemServerSideProps: GetServerSideProps<
   SingleDesign
 > = async (context: GetServerSidePropsContext) => {
   const data = await fetch(
-    `https://apimocha.com/designs/${context.params?.tag}`
+    `${apiHost()}/designs/${context.params?.tag}`
   ).then((res) => res.json());
 
   return {
