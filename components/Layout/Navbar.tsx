@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -13,10 +14,12 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="font-black text-xl flex items-center">
-            <img
+            <Image
               className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
               src="/static/logos/github.svg"
-              width="60"
+              width={60}
+              height={60}
+              alt="Let's go"
             />
             {`Let's go`.split('').map((letter, index) => {
               return (

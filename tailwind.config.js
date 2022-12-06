@@ -6,8 +6,8 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    './views/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: false,
   theme: {
     fontFamily: {
       sans: ["Be Vietnam Pro", "Inter", "system-ui", "sans"],
